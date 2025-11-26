@@ -79,9 +79,11 @@ jobs:
           3
           *
         expected-output: |-
-          ***
-           *
-          ***
+          *****
+           ***
+            *
+           ***
+          *****
         comparison-method: exact
         timeout: 5
         max-score: 10
@@ -96,11 +98,15 @@ jobs:
           5
           *
         expected-output: |-
-          *****
-           ***
-            *
-           ***
-          *****
+          *********
+           *******
+            *****
+             ***
+              *
+             ***
+            *****
+           *******
+          *********
         comparison-method: exact
         timeout: 5
         max-score: 10
@@ -115,12 +121,17 @@ jobs:
           6
           #
         expected-output: |-
-          ######
-           ####
-            ##
-            ##
-           ####
-          ######
+          ###########
+           #########
+            #######
+             #####
+              ###
+               #
+              ###
+             #####
+            #######
+           #########
+          ###########
         comparison-method: exact
         timeout: 5
         max-score: 10
@@ -135,10 +146,13 @@ jobs:
           4
           ab
         expected-output: |-
-          abababab
-           abab
-           abab
-          abababab
+          aaaaaaa
+           aaaaa
+            aaa
+             a
+            aaa
+           aaaaa
+          aaaaaaa
         comparison-method: exact
         timeout: 5
         max-score: 10
